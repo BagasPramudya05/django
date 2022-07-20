@@ -1,0 +1,16 @@
+<html>
+  <head></head>
+  <body>
+    <div class="topnav">
+      <a href="#home">home</a>
+      <a href="#Video">Videos</a>
+      <a href="#movies">Movies</a>
+      <a href="#aboutus">About Us</a>
+    </div>
+    {% for i in da %}
+    <video id="my video" class="video-js" controlspreload="auto" widht="485" height="360" muted="true" data-setup="{}">
+      <source src="{{i.file.url}}" type="video/mp4" />
+    </video>
+    {%endfor%}
+  </body>
+</html>
